@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar is-primary px-6 py-4" role="navigation" aria-label="main navigation">  
+        <nav class="navbar bg-body is-primary px-6 py-4" role="navigation" aria-label="main navigation">  
             <div class="navbar-menu">
                 <div class="navbar-start">
                     <h1 class="subtitle is-4 has-text-weight-semibold">Aconchego</h1> 
@@ -25,44 +25,43 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div class="hero-body">
-                <div class=" p-6">
-                    <div class="columns">
-                        <div class="column is-7">
-                            <h1 class="title custom-title">Bem-vindo ao <br> Aconchego</h1>
-                            <h4 class="title custom-subtitle pt-3 has-text-weight-semibold">|Clínica de Psicologia</h4>
-                            <p class="py-5 is-italic is-size-4">Encontre equilíbrio, acolhimento e <br> bem-estar em cada consulta.</p>
-                            <div>
-                                <button class="button btn is-rounded px-6" style="font-size: 1.25rem">Agendar Consulta</button>
-                                <button class="button is-rounded is-outlined button-tertiary-outlined px-6 ml-5">Como Funciona</button>
-                            </div>                            
-                        </div>
-                        <div class="column is-5">
-                            <img src="./img/logo.png" alt="Imagem Hero">
-                        </div>
-                    </div>             
+        <section class="bg-body p-6">
+            <div class="columns">
+                <div class="column is-7">
+                    <h1 class="title custom-title color-tertiary" style="font-size: 4.5rem">Bem-vindo ao <br> Aconchego</h1>
+                    <h4 class="title custom-subtitle has-text-weight-medium color-tertiary" style="font-size: 3rem">|Clínica de Psicologia</h4>
+                    <p class="py-5 is-italic is-size-4">Encontre equilíbrio, acolhimento e <br> bem-estar em cada consulta.</p>
+                    <div>
+                        <button class="button btn is-rounded px-6" style="font-size: 1.25rem">Agendar Consulta</button>
+                        <button class="button is-rounded is-outlined button-tertiary-outlined px-6 ml-5">Como Funciona</button>
+                    </div>                            
                 </div>
-            </div>
+                <div class="column is-5">
+                    <img src="./img/logo.png" alt="Imagem Hero">
+                </div>
+            </div>             
         </section>
         <section class="section">
-            <div class="container has-text-centered">
-                <h2 class="title custom-subtitle">Modalidades de Atendimento</h2>
+            <div class="has-text-centered">
+                <h2 class="title color-tertiary" style="font-size: 3rem">Modalidades de Atendimento</h2>
                 <h4 class="subtitle is-4 is-italic ">Oferecemos soluções personalizadas para sua saúde mental</h4>
             </div>
-            <div class="columns is-centered py-6">
+            <div class="columns is-centered container p-5">
                 <div class="column is-4">
-                    <div class="card">
+                    <div class="card bg-body">
                         <div class="card-image">
                             <figure class="image">
-                                <img src="./img/card1.png" alt="Imagem do card 1">
+                                    <img src="./img/card1.png" alt="Imagem do card 1">
+                                    <div class="overlay-text">
+                                        Orientação Psicológica
+                                    </div>
                             </figure>
                         </div>
                         <div class="media-content has-text-centered">
                             <p class="title is-size-7 has-text-weight-bold p-2">Apoio rápido para momentos desafiadores.</p>
                         </div>
                         <div class="content has-text-centered">
-                            <p class="title is-size-7 has-text-weight-medium pt-4 px-1">Sessões focadas em situações pontuais, ajudando você a encontrar clareza e equilíbrio em decisões importantes ou crises.</p> 
+                            <p class="title is-size-7 has-text-weight-medium pt-4 px-2">Sessões focadas em situações pontuais, ajudando você a encontrar clareza e equilíbrio em decisões importantes ou crises.</p> 
                         </div>
                         <footer class="has-text-centered pb-3">
                             <a href="#" class="button btn is-rounded px-6">Agendar Orientação</a>
@@ -71,17 +70,20 @@
                 </div>
         
                 <div class="column is-4">
-                    <div class="card">
+                    <div class="card bg-body">
                         <div class="card-image">
                             <figure class="image">
                                 <img src="./img/card2.png" alt="Imagem do card 2">
+                                <div class="overlay-text">
+                                    Psicoterapia Presencial
+                                </div>
                             </figure>
                         </div>
                         <div class="media-content has-text-centered">
                             <p class="title is-size-7 has-text-weight-bold p-2">Um espaço seguro para cuidar de você.</p>
                         </div>
                         <div class="content has-text-centered">
-                            <p class="title is-size-7 has-text-weight-medium pt-4 px-1">Atendimento em um ambiente acolhedor, com foco no autoconhecimento, apoio emocional e desenvolvimento pessoal.</p> 
+                            <p class="title is-size-7 has-text-weight-medium pt-4 px-2">Atendimento em um ambiente acolhedor, com foco no autoconhecimento, apoio emocional e desenvolvimento pessoal.</p> 
                         </div>
                         <footer class="has-text-centered pb-3">
                             <a href="#" class="button btn is-rounded px-6">Marcar Sessão Presencial</a>
@@ -90,22 +92,60 @@
                 </div>
         
                 <div class="column is-4">
-                    <div class="card">
+                    <div class="card bg-body">
                         <div class="card-image">
                             <figure class="image">
                                 <img src="./img/card3.png" alt="Imagem do card 3">
+                                <div class="overlay-text">
+                                    Psicoterapia Online
+                                </div>
                             </figure>
                         </div>
                         <div class="media-content has-text-centered">
                             <p class="title is-size-7 has-text-weight-bold p-2">Cuidado emocional onde você estiver.</p>
                         </div>
                         <div class="content has-text-centered">
-                            <p class="title is-size-7 has-text-weight-medium pt-4 px-1">Sessões à distância, mantendo a qualidade do atendimento, com praticidade e conforto no seu dia a dia.</p> 
+                            <p class="title is-size-7 has-text-weight-medium pt-4 px-2">Sessões à distância, mantendo a qualidade do atendimento, com praticidade e conforto no seu dia a dia.</p> 
                         </div>
                         <footer class="has-text-centered pb-3">
                             <a href="#" class="button btn is-rounded px-6">Marcar Sessão Online</a>
                         </footer>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section >
+            <div class="wave-image">
+                <img src="./img/wave.png" alt="Imagem wave">
+                <div class="overlay-text-wave">
+                    <div class="has-text-centered ">
+                        <h2 class="title color-tertiary" style="font-size: 3rem">Por que a Terapia Transforma?</h2>
+                        <h4 class="subtitle is-4 is-italic">Descubra como a terapia pode ajudar em diferentes aspectos da vida.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-body-wave">
+            <div class="columns  is-centered container">
+                <div class="column is-3 has-text-centered">
+                    <img src="./img/saude-mental2.png" alt="Imagem wave">
+                    <p class="color-tertiary has-text-weight-semibold"> Autoconhecimento Profundo </p>
+                    <p class="has-text-weight-medium"> Compreenda melhor suas emoções e pensamentos</p>
+                </div>
+                <div class="column is-3 has-text-centered">
+                    <img src="./img/saude-mental.png" alt="Imagem wave">
+                    <p class="color-tertiary has-text-weight-semibold"> Redução do Estresse e Ansiedade </p>
+                    <p class="has-text-weight-medium"> Encontre equilíbrio e tranquilidade no dia a dia </p>
+                </div>
+                <div class="column is-3 has-text-centered">
+                    <img src="./img/relacao.png" alt="Imagem wave">
+                    <p class="color-tertiary has-text-weight-semibold"> Melhoria nos Relacionamentos </p>
+                    <p class="has-text-weight-medium"> Construa conexões mais saudáveis e significativas </p>
+                </div>
+                <div class="column is-3 has-text-centered">
+                    <img src="./img/resiliencia.png" alt="Imagem wave">
+                    <p class="color-tertiary has-text-weight-semibold"> Desenvolvimento de Resiliência </p>
+                    <p class="has-text-weight-medium"> Fortaleça sua capacidade de enfrentar desafios. </p>
                 </div>
             </div>
         </section>

@@ -8,23 +8,17 @@ body {
     --tertiary-color: #C96500;
     --text-color: #7C8457;
 }
-
-.navbar, .hero-body, .card {
+.color-tertiary {
+    color:  var(--tertiary-color);
+}
+.bg-body{
     background-color: var(--primary-color);
 }
-
+.bg-body-wave{
+    background-color: #eac371;
+}
 .navbar-item, .navbar-start h1{
     color: var(--text-color);
-}
-
-.custom-title {
-    font-size: 4.5rem; 
-    color:  var(--tertiary-color);
-}
-
-.custom-subtitle {
-    font-size: 3rem; 
-    color:  var(--tertiary-color);
 }
 
 .btn {
@@ -41,4 +35,46 @@ body {
     border-color: var(--tertiary-color);
     color: var(--tertiary-color); 
     font-size: 1.25rem;
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.wave-image {
+    position: relative;
+}
+
+.wave-image, .wave-image img {
+    display: block;
+    width: 100%
+}
+
+.wave-image .overlay-text-wave {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-20%, -50%);
+    z-index: 1;
 }
