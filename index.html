@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aconchego</title> 
+    <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar is-primary px-6 py-4" role="navigation" aria-label="main navigation">  
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <h1 class="subtitle is-4 has-text-weight-semibold">Aconchego</h1> 
+                </div>  
+                <div class="navbar-end">
+                  <RouterLink class="navbar-item" to="modalidade">Modalidades de Atendimento</RouterLink>
+                  <RouterLink class="navbar-item" to="/beneficios">Benefícios da Terapia</RouterLink>
+                  <RouterLink class="navbar-item" to="/profissionais">Nossos Profissionais</RouterLink>
+                  <RouterLink class="navbar-item" to="/depoimentos">Depoimentos Reais</RouterLink>
+                </div>
+            </div>  
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="hero-body">
+                <div class=" p-6">
+                    <div class="columns">
+                        <div class="column is-7">
+                            <h1 class="title custom-title">Bem-vindo ao <br> Aconchego</h1>
+                            <h4 class="title custom-subtitle pt-3 has-text-weight-semibold">|Clínica de Psicologia</h4>
+                            <p class="py-5 is-italic is-size-4">Encontre equilíbrio, acolhimento e <br> bem-estar em cada consulta.</p>
+                            <div>
+                                <button class="button btn is-rounded px-6" style="font-size: 1.25rem">Agendar Consulta</button>
+                                <button class="button is-rounded is-outlined button-tertiary-outlined px-6 ml-5">Como Funciona</button>
+                            </div>                            
+                        </div>
+                        <div class="column is-5">
+                            <img src="./img/logo.png" alt="Imagem Hero">
+                        </div>
+                    </div>             
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container has-text-centered">
+                <h2 class="title custom-subtitle">Modalidades de Atendimento</h2>
+                <h4 class="subtitle is-4 is-italic ">Oferecemos soluções personalizadas para sua saúde mental</h4>
+            </div>
+            <div class="columns is-centered py-6">
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="./img/card1.png" alt="Imagem do card 1">
+                            </figure>
+                        </div>
+                        <div class="media-content has-text-centered">
+                            <p class="title is-size-7 has-text-weight-bold p-2">Apoio rápido para momentos desafiadores.</p>
+                        </div>
+                        <div class="content has-text-centered">
+                            <p class="title is-size-7 has-text-weight-medium pt-4 px-1">Sessões focadas em situações pontuais, ajudando você a encontrar clareza e equilíbrio em decisões importantes ou crises.</p> 
+                        </div>
+                        <footer class="has-text-centered pb-3">
+                            <a href="#" class="button btn is-rounded px-6">Agendar Orientação</a>
+                        </footer>
+                    </div>
+                </div>
+        
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="./img/card2.png" alt="Imagem do card 2">
+                            </figure>
+                        </div>
+                        <div class="media-content has-text-centered">
+                            <p class="title is-size-7 has-text-weight-bold p-2">Um espaço seguro para cuidar de você.</p>
+                        </div>
+                        <div class="content has-text-centered">
+                            <p class="title is-size-7 has-text-weight-medium pt-4 px-1">Atendimento em um ambiente acolhedor, com foco no autoconhecimento, apoio emocional e desenvolvimento pessoal.</p> 
+                        </div>
+                        <footer class="has-text-centered pb-3">
+                            <a href="#" class="button btn is-rounded px-6">Marcar Sessão Presencial</a>
+                        </footer>
+                    </div>
+                </div>
+        
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="./img/card3.png" alt="Imagem do card 3">
+                            </figure>
+                        </div>
+                        <div class="media-content has-text-centered">
+                            <p class="title is-size-7 has-text-weight-bold p-2">Cuidado emocional onde você estiver.</p>
+                        </div>
+                        <div class="content has-text-centered">
+                            <p class="title is-size-7 has-text-weight-medium pt-4 px-1">Sessões à distância, mantendo a qualidade do atendimento, com praticidade e conforto no seu dia a dia.</p> 
+                        </div>
+                        <footer class="has-text-centered pb-3">
+                            <a href="#" class="button btn is-rounded px-6">Marcar Sessão Online</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
