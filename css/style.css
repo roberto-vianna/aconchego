@@ -2,12 +2,17 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary-color: #F0D082;
     --secondary-color: #F1A113;
     --tertiary-color: #C96500;
     --text-color: #7C8457;
 }
+
 .color-tertiary {
     color:  var(--tertiary-color);
 }
@@ -16,15 +21,18 @@ body {
 }
 .bg-body-wave{
     background-color: #eac371;
+    margin-top: -5px;
 }
 .navbar-item, .navbar-start h1{
     color: var(--text-color);
+    font-weight: 500;
 }
+
 
 .btn {
     background-color: var(--tertiary-color); 
+    border: 1px solid var(--tertiary-color);
     color: white; 
-    border: none; 
 }
 
 .btn:hover{
@@ -34,7 +42,11 @@ body {
 .button-tertiary-outlined.is-outlined {
     border-color: var(--tertiary-color);
     color: var(--tertiary-color); 
-    font-size: 1.25rem;
+}
+
+.same-width {
+    min-width: 200px;
+    text-align: center;
 }
 
 .card-image {
@@ -62,19 +74,58 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
-.wave-image {
-    position: relative;
-}
-
-.wave-image, .wave-image img {
+.wave-image img {
     display: block;
-    width: 100%
+    width: 100%;
 }
 
-.wave-image .overlay-text-wave {
-    position: absolute;
-    top: 70%;
-    left: 30%;
-    transform: translate(-20%, -50%);
-    z-index: 1;
+
+.navbar-item {
+    background-color: transparent !important; 
 }
+
+.navbar-item:hover {
+    background-color: transparent !important;
+    color: var(--tertiary-color); 
+}
+.has-background-color {
+    background-color: #fcfcec
+}
+
+.list-icon {
+    font-size: 0.5rem;
+    margin-right: 5px; 
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+.navbar-menu.is-active {
+    box-shadow: none; 
+}
+
+/* .buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+} */
